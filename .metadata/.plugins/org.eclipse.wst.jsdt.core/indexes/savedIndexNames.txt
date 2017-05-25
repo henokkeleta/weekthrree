@@ -1,0 +1,6 @@
+INDEX VERSION 1.3+/home/student/Documents/workspace-sts-3.8.4.RELEASE/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3318084000.index
+3590595822.index
+171538616.index
+844020394.index
+1747623579.index

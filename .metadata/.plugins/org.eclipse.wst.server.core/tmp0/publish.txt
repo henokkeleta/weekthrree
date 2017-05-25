@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Wed May 10 17:17:54 EDT 2017
+org.eclipse.jst.jee.server\:ddd=/home/student/Downloads/sts-bundle/pivotal-tc-server-developer-3.2.4.SR1/base-instance/wtpwebapps/ddd
+org.eclipse.jst.jee.server\:DWP=/home/student/Downloads/sts-bundle/pivotal-tc-server-developer-3.2.4.SR1/base-instance/wtpwebapps/DWP
+org.eclipse.jst.jee.server\:BullhornBootstrap=/home/student/Downloads/sts-bundle/pivotal-tc-server-developer-3.2.4.SR1/base-instance/wtpwebapps/BullhornBootstrap

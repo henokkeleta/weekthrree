@@ -1,0 +1,13 @@
+package tryToDrow;
+
+public class drawIt {
+
+
+      public static void main(System[] args)
+
+        { 
+
+             System.out.println("****\n*\t*\n*\t*\n*\t*\n*\t*\n****");
+        }
+}
+

@@ -1,0 +1,36 @@
+package dayThree;
+import java.util.Random;
+import java.util.Scanner;
+public class guessIt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     
+     String answer = "Y";
+  
+        
+      
+      while(answer.equalsIgnoreCase("y"))
+      {  
+    	  Scanner scan = new Scanner(System.in);
+    	  System.out.println("guess any number between 1 and 50 and find my secret no");
+    	  int input = scan.nextInt();
+    	  Random r = new Random();
+    	  int x = 1+ r.nextInt(50);
+    	  if(input==x)
+    	  { 
+    		  System.out.println("you guessed right:");
+    	  }
+    	  else if(input<x)
+    	  {  
+    		  System.out.println("you guessed too low:");
+    	  }
+    	  else{ 
+    		  System.out.println("too high:");
+    	  }
+    	  System.out.println("do yu want to continue?  answer Y/N");
+    	  answer =scan.nextLine();
+      }
+	}
+
+}

@@ -1,0 +1,55 @@
+package arrayTry;
+
+public class sortIt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[]unsorted = {40,65,43,7,3,2,100};
+		int[]newArray=sort1(unsorted);
+		for(int i=0;i<newArray.length;i++)
+		{ 
+			System.out.println(newArray[i]);
+		}
+
+	}
+     public static int[]sort1(int[]anyArray)
+     { 
+    	 int temp;
+    	 int i;
+    	
+    	 int[]newArray1 = new int[anyArray.length];
+    	  for(int j=0;j<anyArray.length ;j++)
+		  { 
+    	 
+    	      for(i=0;i<anyArray.length ;i++)
+                {  
+    		 /*int least=anyArray[0];
+    		  for(int j=0;j<anyArray.length ;j++)
+    		  { 
+    			 if(anyArray[j]<least) 
+    			 { 
+    				temp= anyArray[j];
+    				least=temp;
+    				//System.out.println(temp);
+    				 anyArray[j]=anyArray[j+1];
+    				newArray1[j]=least;
+    				 
+    			 }*/
+    			 newArray1[i]=SmallestElement(anyArray);
+    		  }
+    	 }
+    	 return newArray1;
+     }
+     public static int SmallestElement(int[] anyArray)
+     { 
+     	int least = anyArray[0];
+     	for(int i=0;i<anyArray.length;i++)
+     	{ 
+     		if(anyArray[i]<least)
+     		{ 
+     			least=anyArray[i];
+     		}
+     		
+     	}return least;
+     }
+}
