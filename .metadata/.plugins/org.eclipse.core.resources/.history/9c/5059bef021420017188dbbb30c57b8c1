@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class salesReport {
+	static Scanner scan= new Scanner(System.in);
+	public static void main(String[] args) {
+		
+		salesDefinition person = new salesDefinition();
+		String input="y";
+	
+		  while(input.equalsIgnoreCase("y"))
+			System.out.println("enter the customer name");
+			String name= scan.nextLine();
+			person.setCustomerName(name);
+			System.out.println("enter the customer number");
+			int number= scan.nextInt();
+			person.setCustomerNumber(number);
+			System.out.println("enter the sales amount");
+			double sales= scan.nextDouble();
+			person.setSalesAmount(sales);
+			System.out.println("enter the tax code");
+			String tax= scan.nextLine();
+			person.setCustomerName(tax);
+			double calcTax =person.calculateTax(sales, tax);
+			System.out.println("customer Id:"+ " "+person.getCustomerNumber());
+			System.out.println("customer Name:"+ " "+person.getCustomerName());
+			System.out.println("customer sales Amount:"+ " "+person.getSalesAmount());
+			System.out.println("customer Id:"+ " "+person.getTaxCode());
+			System.out.println("Total Amount Due:"+person.totalSalesAmount(sales,calcTax));
+			System.out.println("Do you want to enter another record. please answer Y or N");
+			 input = scan.nextLine();
+			
+			
+		
+
+	}
+
+}

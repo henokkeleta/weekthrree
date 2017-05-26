@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class grades {
+
+	public static void main(String[] args) {
+		
+		
+       Scanner scan=new Scanner(System.in);
+       System.out.println("Enter your grade here");
+       int grade = scan.nextInt();
+      // int remainder = grade%10;
+    //   System.out.println(remainder);
+       
+       
+       if(grade>90)
+       { 
+    	  
+    		   System.out.println("A"+sign(grade));
+    		   
+      }
+        
+       
+
+	}
+	public static String sign(int grade)
+	{ 
+	  int remainder = grade%10;
+	  String x;
+	  if(remainder>=7)
+	  { 
+		  x="+";
+	  } 
+	  else { 
+		  x="-";
+	  }
+	  return x;
+	}
+}

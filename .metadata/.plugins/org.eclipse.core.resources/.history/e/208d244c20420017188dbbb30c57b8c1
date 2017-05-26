@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class salesReport {
+
+	public static void main(String[] args) {
+		Scanner scan= new Scanner(System.in);
+		salesDefinition person = new salesDefinition();
+		do { 
+			System.out.println("enter the customer name");
+			
+			
+		}
+
+	}
+
+}
