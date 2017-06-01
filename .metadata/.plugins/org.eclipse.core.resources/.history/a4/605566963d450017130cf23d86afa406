@@ -1,0 +1,71 @@
+
+import java.util.Scanner;
+public class NumberToWord{
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+Scanner sc = new Scanner(System.in);
+boolean Done = false;
+     System.out.println("Enter the number to be converted, type Done when want to quit");
+      while(!Done)
+      {
+      String input = sc.next();
+      String word= oneDigit(input);
+       System.out.println(word);
+       if(input.equalsIgnoreCase("Done"))
+       { 
+    	   Done = true;
+       }
+      }
+      
+}
+ public static String oneDigit(String num)
+ { 
+	 String y=num;
+ 
+switch(y)
+{ 
+case "1":
+{ 
+System.out.println("one");
+}
+case "2":
+{ 
+System.out.println("Two");
+}
+case "3":
+{ 
+System.out.println("Three");
+}
+case "4":
+{ 
+System.out.println("Four");
+}
+case "5":
+{ 
+System.out.println("Five");
+}
+case "6":
+{ 
+System.out.println("Six");
+}
+case "7":
+{ 
+System.out.println("Seven");
+}
+case "8":
+{ 
+System.out.println("Eight");
+}
+case "9":
+{ 
+System.out.println("Nine");
+}
+ 
+ 
+}
+ 
+ }
+ public static TwoDigit(String num)
+ { 
+ 
+ }

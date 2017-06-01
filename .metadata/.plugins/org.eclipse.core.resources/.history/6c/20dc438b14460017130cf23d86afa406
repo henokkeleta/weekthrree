@@ -1,0 +1,10 @@
+
+public class DivideByZeroException1 {
+	public DivideByZeroException1()
+    { 
+    	super();
+    }
+    public DivideByZeroException1(String message)
+    { 
+    	super(message);
+}

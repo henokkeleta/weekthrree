@@ -1,0 +1,83 @@
+
+public class CarDefinition extends Vehicle{
+  
+	  
+	  private int speed;
+	  
+	 
+	  
+	  
+	  
+	  public CarDefinition()
+	  { 
+		  super();
+		  
+		  speed=0;
+		 
+		
+	  }
+	  
+	  public CarDefinition(String make,int speed)
+	  { 
+		  super();
+		  this.speed=speed;
+		  
+		 
+	  }
+	  public CarDefinition(String make,String color)
+	  { 
+		  super();
+		//  this.color=color;
+		  
+		 
+	  }
+
+	public int getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+	 public String StartIt()
+	 { 
+		 return "Started!";
+	 }
+	public String Acceleration(int speed)
+	{   
+		String status="";
+		
+//		if(speed==0)		{ 
+//			status="stopped";
+//		}
+		 if(speed==1)
+		{   
+			
+			status= "accelerating";
+		}
+		else if(this.speed==20)
+		{ 
+			status="has stopped to have its emmision checked";
+		}
+		else if(this.speed==21){ 
+			status="passes its emmision test";
+		}
+		
+		return status;
+	}
+    public String display()
+    { 
+    	return "The"+" "+this.getColor()+" "+this.getMake()+" "+"is" +this.Acceleration(this.speed);
+    }
+     
+	//@Override
+//	public String toString() {
+//		return "CarDefinition [speed=" + speed + ", getSpeed()=" + getSpeed() + ", StartIt()=" + StartIt()
+//				+ ", getColor()=" + getColor() + ", getMake()=" + getMake() + ", getPlateNumber()=" + getPlateNumber()
+//				+ ", getNumberOfWheels()=" + getNumberOfWheels() + ", getClass()=" + getClass() + ", hashCode()="
+//				+ hashCode() + ", toString()=" + super.toString() + "]";
+//	}
+
+
+	
+}

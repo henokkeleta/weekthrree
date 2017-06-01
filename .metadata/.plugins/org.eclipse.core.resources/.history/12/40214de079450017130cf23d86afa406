@@ -1,0 +1,31 @@
+
+import java.time.LocalDate;
+import java.time.Year;
+import java.time.format.DateTimeFormatter;
+
+import java.util.Scanner;
+public class ageFinder {
+     static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		
+		DateTimeFormatter formater = DateTimeFormatter.ofPattern("d/MM/yyyy");	
+		String birthDate ="11/01/1979";
+		
+		LocalDate today = LocalDate.now();
+		int x= today.getYear();
+		System.out.println(x);
+		String to =today.format(formater);
+		LocalDate localDate = LocalDate.parse(birthDate,formater);
+		String v =localDate.format(formater);
+		int Sv =localDate.getYear();
+		int Age = getTheAge(x,Sv);
+	
+		
+
+	}
+	public static int getTheAge(int x,int y)
+	{   
+		return x-y;
+	}
+  
+}

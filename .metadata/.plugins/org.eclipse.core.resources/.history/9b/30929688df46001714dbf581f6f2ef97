@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class CarRunner {
+  static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     CarDefinition car1 =new CarDefinition();
+     CarDefinition car2 =new CarDefinition();
+     car1.setMake("Porsche");
+     car1.setColor("red");
+     car2.setMake("Jetta");
+     car2.setColor("blue");
+     car1.setSpeed(1);
+     int max=50;
+     car1.StartIt();
+     car2.StartIt();
+     for(int j=1;j<=max;j++,j--)
+     { 
+      // car1.Acceleration(j);
+      // car2.Acceleration(j);
+        checkStatus(car1.getMake(),j);
+        checkStatus(car2.getMake(),j);
+     }
+	}
+public static String checkStatus(String make,int speed)
+{ 
+	CarDefinition car1 =new CarDefinition(make,speed);
+	 String status=car1.Acceleration(speed);
+	return status;
+}
+}

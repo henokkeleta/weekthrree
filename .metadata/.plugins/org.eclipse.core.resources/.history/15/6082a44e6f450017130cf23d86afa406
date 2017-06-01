@@ -1,0 +1,25 @@
+
+import java.util.Calendar;
+
+import java.util.Scanner;
+public class ageFinder {
+     static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		
+		// create a calendar
+		   Calendar cal = Calendar.getInstance();
+
+		   // print current time
+		 //  System.out.println("Current year is :" + cal.getTime());
+		   System.out.println("Current year is :" + cal.getWeekYear());
+
+		   // set the year,month and day to something else
+		   cal.isSet(1995);
+
+		   // print the result
+		   System.out.println("Altered year is :" + cal.getTime()); 
+
+
+	}
+
+}

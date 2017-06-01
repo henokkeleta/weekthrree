@@ -1,0 +1,15 @@
+
+public class VehicleRunnerc {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car myCar = new Car("Volvo",50,1000);
+		Plane myPlane=new Plane("Boeing",450,1000);
+		Boat myBoat =new Boat("dream",60,"Atlantic");
+		myCar.vehicleStatus();
+		myBoat.vehicleStatus();
+		myPlane.vehicleStatus();
+
+	}
+
+}

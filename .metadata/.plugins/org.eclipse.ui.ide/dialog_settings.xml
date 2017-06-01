@@ -129,4 +129,11 @@
 		<item value="583" key="DIALOG_X_ORIGIN"/>
 		<item value="318" key="DIALOG_Y_ORIGIN"/>
 	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="613" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="622" key="DIALOG_HEIGHT"/>
+		<item value="657" key="DIALOG_X_ORIGIN"/>
+		<item value="116" key="DIALOG_Y_ORIGIN"/>
+	</section>
 </section>
