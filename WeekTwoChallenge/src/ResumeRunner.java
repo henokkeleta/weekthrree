@@ -7,7 +7,7 @@ public class ResumeRunner {
 		ArrayList<String> education=new ArrayList<String>();
 		ArrayList<String> workExperience=new ArrayList<String>();
 		ArrayList<String> duities=new ArrayList<String>();
-
+		ArrayList<ArrayList<String>> nodes=new ArrayList<ArrayList<String>>();
 		ArrayList<String> skill=new ArrayList<String>();
 		String input ="";
 		System.out.println("Enter your name here");
@@ -54,6 +54,7 @@ public class ResumeRunner {
 				}
 				
 				duities.add(duty);
+				nodes.add(duities);
 
 
 				System.out.println("if u have more? enter the duty uf u are done type done");
@@ -101,13 +102,13 @@ public class ResumeRunner {
 		for(String i :workExperience)
 		{
 			System.out.println(k+" "+i);
-
-			for(String m :duities)
-			{
+			
+		  
+		for(ArrayList<String> m :nodes)
+		  {
 				System.out.println("  "+"-"+" "+m);
-
-			} 
-			k++;
+          } 
+		k++;
 		}
 		
 
