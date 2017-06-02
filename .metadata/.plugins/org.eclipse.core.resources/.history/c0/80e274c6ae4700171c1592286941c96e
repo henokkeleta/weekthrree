@@ -1,0 +1,87 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class ResumeRunner {
+   static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       ArrayList<String> education=new ArrayList<String>();
+       ArrayList<String> workExperience=new ArrayList<String>();
+       ArrayList<String> duities=new ArrayList<String>();
+       ArrayList<String> skill=new ArrayList<String>();
+       String input ="";
+       System.out.println("Enter your name here");
+       String name =sc.nextLine(); 
+       System.out.println("Enter your email here");
+       String email =sc.nextLine();
+       System.out.println("Enter your educational achievment");
+       while(!input.equalsIgnoreCase("N"))
+       { 
+          String one =sc.nextLine();
+          education.add(one);
+          System.out.println("more? if you are done type N");
+          input =sc.nextLine();
+       }
+       
+     
+       System.out.println("enter your work expe");
+       String input2;
+       do
+       { 
+          String one =sc.nextLine();
+          workExperience.add(one);
+            System.out.println("Enter your duty there");
+            String duty="";
+             while(duty.equalsIgnoreCase("done"))
+             { 
+            	duty= sc.nextLine();
+            	duities.add(duty);
+            	System.out.println("if u have more? enter the duty uf u are done type done");
+            	if(duty.equalsIgnoreCase("done"))
+            	{ 
+            		break;
+            	}
+             }
+              
+               
+          System.out.println("more? if you are done type N");
+          input2 =sc.nextLine();
+       }while(!input2.equalsIgnoreCase("N"));
+    
+      
+       
+       System.out.println("enter your skill");
+       String input12="";
+       while(!input12.equalsIgnoreCase("N"))
+       { 
+          String one =sc.nextLine();
+          skill.add(one);
+          System.out.println("more? if you are done type N");
+          input12 =sc.nextLine();
+       }
+     
+       System.out.println("Education");
+       System.out.println("....................");
+       int r=0, j=0,k=0,l=0;
+       for(String i :education)
+       {
+       System.out.println(j+" "+i);
+       j++;
+       }
+       for(String i :workExperience)
+       {
+       System.out.println(k+" "+i);
+       k++;
+       }
+       for(String i :duities)
+       {
+       System.out.println(r+" "+i);
+       r++;
+       }
+       for(String i :skill)
+       {
+       System.out.println(l+" "+i);
+       l++;
+       }
+	}
+
+}

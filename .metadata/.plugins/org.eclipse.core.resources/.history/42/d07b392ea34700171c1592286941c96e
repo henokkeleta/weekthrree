@@ -1,0 +1,66 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class ResumeRunner {
+   static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       ArrayList<String> education=new ArrayList<String>();
+       ArrayList<String> workExperience=new ArrayList<String>();
+       ArrayList<String> duity=new ArrayList<String>();
+       ArrayList<String> skill=new ArrayList<String>();
+       String input ="";
+       System.out.println("Enter your name here");
+       String name =sc.nextLine(); 
+       System.out.println("Enter your email here");
+       String email =sc.nextLine();
+       System.out.println("Enter your educational achievment");
+       while(!input.equalsIgnoreCase("N"))
+       { 
+          String one =sc.nextLine();
+          education.add(one);
+          System.out.println("more? if you are done type Y");
+          input =sc.nextLine();
+       }
+      // sc.close();
+     
+       System.out.println("enter your work expe");
+       while(!input.equalsIgnoreCase("N"))
+       { 
+          String one =sc.nextLine();
+          workExperience.add(one);
+          System.out.println("more? if you are done type Y");
+          input =sc.nextLine();
+       }
+      // sc.close();
+      
+       
+       System.out.println("enter your skill");
+       while(!input.equalsIgnoreCase("N"))
+       { 
+          String one =sc.nextLine();
+          skill.add(one);
+          System.out.println("more? if you are done type Y");
+          input =sc.nextLine();
+       }
+      // sc.close();
+       System.out.println("Education");
+       System.out.println("....................");
+       int j=0,k=0,l=0;
+       for(String i :education)
+       {
+       System.out.println(j+" "+i);
+       j++;
+       }
+       for(String i :workExperience)
+       {
+       System.out.println(k+" "+i);
+       k++;
+       }
+       for(String i :skill)
+       {
+       System.out.println(l+" "+i);
+       l++;
+       }
+	}
+
+}

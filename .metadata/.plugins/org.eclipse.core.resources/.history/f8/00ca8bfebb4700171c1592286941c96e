@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class dutyMember {
+	private String dutty;
+
+	public String getDutty() {
+		return dutty;
+	}
+
+	public void setDutty(String dutty) {
+		this.dutty = dutty;
+	}
+	
+}

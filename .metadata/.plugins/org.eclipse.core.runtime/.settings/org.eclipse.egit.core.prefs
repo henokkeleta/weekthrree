@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=/home/student/BullhornMySQL/.git\:/home/student/Documents/workspace-sts-3.8.4.RELEASE/.git\:
-GitRepositoriesView.GitDirectories.relative=/home/student/BullhornMySQL/.git\:.git\:
+GitRepositoriesView.GitDirectories=/home/student/Documents/workspace-sts-3.8.4.RELEASE/CarProgram/.git\:/home/student/BullhornMySQL/.git\:/home/student/Documents/workspace-sts-3.8.4.RELEASE/.git\:
+GitRepositoriesView.GitDirectories.relative=CarProgram/.git\:/home/student/BullhornMySQL/.git\:.git\:
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1

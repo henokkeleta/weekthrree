@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class ResumeRunner {
+   static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       ArrayList<String> education=new ArrayList<String>();
+       ArrayList<String> workExperience=new ArrayList<String>();
+       ArrayList<String> duity=new ArrayList<String>();
+       ArrayList<String> skill=new ArrayList<String>();
+       String input ="";
+       System.out.println("Enter your name here");
+       String name =sc.nextLine(); 
+       System.out.println("Enter your email here");
+       String email =sc.nextLine();
+       System.out.println("Enter your educational achievment");
+       while(!input.equalsIgnoreCase("N"))
+       { 
+          String one =sc.nextLine();
+          education.add(one);
+          System.out.println("more? if you are done type Y");
+          input =sc.nextLine();
+       }
+       sc.close();
+       for(String i :education)
+       {
+       System.out.println(i);
+       }
+	}
+
+}
