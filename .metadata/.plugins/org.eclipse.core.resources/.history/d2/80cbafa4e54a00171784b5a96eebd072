@@ -5,7 +5,12 @@ public class AtmApp {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	  ArrayList<Atm> customers=new ArrayList<Atm>();
-	 Atm customer =new Atm();
+	  Atm customer=new Atm();
+      Atm person1= new Atm("Henok Berhe","20001414",2434,1000);
+      Atm person2= new Atm("Bisrat Woldeab","20001313",2224,2000);
+      person1.addBalance(10);
+      System.out.println(person1.showBalance());
+     // boolean done=false;
       
       System.out.println("Welcome to my bank!\n enter your account number");
 	  String account=sc.nextLine();
@@ -58,9 +63,14 @@ public class AtmApp {
     		  System.out.println(customer.showBalance());
     		  break;
     	  }
- 
+//    	  case 4:
+//    	  { 
+//    		 System.out.println(customer.printReciept());
+//    		 break;
+//    		
+//    	  } 
     	  default:{
-    		  System.out.println("enter the valid number 1 up to 3");
+    		  System.out.println("enter the valid number 1 up to 4");
     		  break;
     	  }
     	  }
@@ -73,10 +83,9 @@ public class AtmApp {
     	     		   break;
     	       	   }
     	       
-    	  customers.add(customer);
     	  
-      }
-      while(!input.equalsIgnoreCase("y"));
+    	  
+      } while(!input.equalsIgnoreCase("y"));
       System.out.println(customer.printReciept());
 	}
 

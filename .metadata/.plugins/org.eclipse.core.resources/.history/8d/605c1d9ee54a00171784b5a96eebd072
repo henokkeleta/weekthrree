@@ -95,10 +95,10 @@ public void setBalance(double balance) {
   }
   public String printReciept()
   { 
-	  return "\tAccount summary:\nName=:"+this.getName()+"\n\tAccount activity on: "+this.getAccountNumber()+"\n"
-	  		+ "\tMoney added on your account is:"+this.getAddedAmount()+"\n"
-	  		+"\tThe aamount of money you withdraw now:"+this.getWithdrowAmount()+"\n"
-	  		+ "\tYour curerent Balance :"+getBalance()+"\n\tThank you";
+	  return "Account summary:\nName=:"+this.getName()+"\nAccount activity on: "+this.getAccountNumber()+"\n"
+	  		+ "money added on your account is:"+this.getAddedAmount()+"\n"
+	  		+"The aamount of money you withdraw now:"+this.getWithdrowAmount()+"\n"
+	  		+ "Your curerent Balance :"+getBalance()+"\nThank you";
   }
 
 }
