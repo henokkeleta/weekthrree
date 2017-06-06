@@ -1,18 +1,19 @@
 import java.util.ArrayList;
 
 public class Resume {
- 
-	
-	
-	
-	public Resume(String name, String email) {
-		super();
-		this.name = name;
-		this.email = email;
-	}
 	private String name;
 	private String email;
 	private ArrayList<String> Education;
+	
+	
+	
+	
+	public Resume() {
+		// TODO Auto-generated constructor stub
+		this.name = name;
+		this.email = email;
+	}
+	
 	
 	
 	

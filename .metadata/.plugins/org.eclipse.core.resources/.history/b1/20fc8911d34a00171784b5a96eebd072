@@ -1,0 +1,7 @@
+
+public interface AtmInterface {
+  public double addBalance(double num, String accountNumber);
+  public double withdrow(double num,String accountNumber)throws overDraftException;
+  public void showBalance(String accountNUmber);
+  public void printRecipt();
+}

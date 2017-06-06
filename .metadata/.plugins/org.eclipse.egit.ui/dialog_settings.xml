@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="GitCommitMessageComponent">
+		<list key="/home/student/Documents/workspace-sts-3.8.4.RELEASE/CarProgram/.git">
+			<item value="false"/>
+			<item value="Henok Berhe &lt;heniken05@yahoo.com&gt;"/>
+			<item value="practice "/>
+			<item value="Henok Berhe &lt;heniken05@yahoo.com&gt;"/>
+			<item value="761f8ef53a95fecbd97ceb4c88339a0f5c8292c0"/>
+		</list>
+		<list key="/home/student/Documents/workspace-sts-3.8.4.RELEASE/BookProject/.git">
+			<item value="empty"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="200,200" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="200,200" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class AtmApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Atm person1= new Atm("Henok Berhe","20001414","2434","1000");
+      Atm person2= new Atm("Bisrat Woldeab","20001313","2224","2000");
+	}
+
+}

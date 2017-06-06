@@ -1,0 +1,33 @@
+
+public class Atm {
+  private String name;
+  private String accountNumber;
+  private int passCode;
+  private double balance;
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getAccountNumber() {
+	return accountNumber;
+}
+public void setAccountNumber(String accountNumber) {
+	this.accountNumber = accountNumber;
+}
+public int getPassCode() {
+	return passCode;
+}
+public void setPassCode(int passCode) {
+	this.passCode = passCode;
+}
+public double getBalance() {
+	return balance;
+}
+public void setBalance(double balance) {
+	this.balance = balance;
+}
+  
+  
+}

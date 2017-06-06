@@ -1,0 +1,7 @@
+
+public interface AtmInterface  {
+  public double addBalance(double num);
+  public double withdrow(double num)throws overDraftException;
+  public void showBalance();
+ // public void printReciept();
+}

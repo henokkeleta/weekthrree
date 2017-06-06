@@ -1,0 +1,75 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+public class BookApp {
+
+	public static void main(String[] args) {
+		/**
+		 * The following Arraylist will serve for the following enevitable projects 
+		 * that might envolve with the idea of book database
+		 */
+		ArrayList<Book> newBook=new ArrayList<Book>();
+	    BookDatabase trying =new BookDatabase();
+	    Book book1 =new Book();
+	    Book book2 =new Book();
+	    Book book3 =new Book();
+	    Book book4 =new Book();
+	    Book book5 =new Book();
+	    Book book6 =new Book();
+	    book1.setAuthor("Henok Berhe");
+        book1.setTitle("Java for All");
+	    book1.setDescription("Designed for anyone likes to code");
+	    book1.setPrice(22.0);
+	    book2.setSkuNumber("Java1001");
+	    book2.setAuthor("Bruce Erckel");
+        book2.setTitle("Java for All");
+	    book2.setDescription("Designed for anyone likes to code");
+	    book2.setPrice(22.0);
+	    book2.setSkuNumber("Java1002");
+	    book3.setAuthor("Jeanne Boyarsky");
+        book3.setTitle("Java for All");
+	    book3.setDescription("Designed for anyone likes to code");
+	    book3.setPrice(22.0);
+	    book3.setSkuNumber("Java1003");
+	    book4.setAuthor("Al Sweigart");
+        book4.setTitle("Java for All");
+	    book4.setDescription("Designed for anyone likes to code");
+	    book4.setPrice(22.0);
+	    book4.setSkuNumber("Python1004");
+	    book5.setAuthor("Simon Monk");
+        book5.setTitle("Java for All");
+	    book5.setDescription("Designed for anyone likes to code");
+	    book5.setPrice(22.0);
+	    book5.setSkuNumber("Zombie1005");
+	    book1.setAuthor("Donald Norris");
+        book1.setTitle("Java for All");
+	    book1.setDescription("Designed for anyone likes to code");
+	    book1.setPrice(22.0);
+	    book1.setSkuNumber("Rasp1006");
+	    
+//		Book otherBook =new Book();
+//		otherBook.setAuthor("Henok Berhe");
+//		otherBook.setTitle("Coding Made easy");
+//		otherBook.setDescription("Computer Science book for dummies");
+//		otherBook.setPrice(22.99);
+//		otherBook.getPrice(5);
+//		otherBook.setSkuNumber("aa11");
+//		otherBook.setIsInStock("inStock");//the getPrice meethod isenvoked to return the price of five books
+		System.out.println("Your Total for your order of 5 "+otherBook.getTitle()+" "+"Book is:"+" "+otherBook.getPrice(5));
+		otherBook.getDisplayText();
+		newBook.add(otherBook);
+		Book otherBook1 =new Book();
+	    otherBook1.setAuthor("Rediet Ayalew");
+		otherBook1.setTitle("Coding Made easy");
+	    otherBook1.setDescription("Computer Science book for dummies");
+		otherBook1.getDisplayText();
+		otherBook1.setSkuNumber("bb22");
+		newBook.add(otherBook1);
+		System.out.println(trying.getBook("aa11"));
+		
+		
+		
+
+	}
+	
+
+}

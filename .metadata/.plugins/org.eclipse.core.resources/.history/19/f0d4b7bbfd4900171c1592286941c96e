@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+public class BookApp {
+
+	public static void main(String[] args) {
+		ArrayList<Book> newBook=new ArrayList<Book>();
+	   //	newBook.add()
+		Book otherBook =new Book();
+		otherBook.setAuthor("Henok Berhe");
+		otherBook.setTitle("Coding Made easy");
+		otherBook.setDescription("Computer Science book for dummies");
+		
+		
+
+	}
+	
+
+}

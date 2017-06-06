@@ -1,0 +1,62 @@
+import java.util.Scanner;
+public class AtmApp {
+  static Scanner sc= new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	  Atm customer=new Atm();
+      Atm person1= new Atm("Henok Berhe","20001414",2434,1000);
+      Atm person2= new Atm("Bisrat Woldeab","20001313",2224,2000);
+      person1.addBalance(10);
+      System.out.println(person1.showBalnce());
+      boolean done=false;
+      String input1="";
+      do
+      { 
+    	  System.out.println("Welcome to my bank!\n enter your account number");
+    	  String account=sc.nextLine();
+    	  customer.setAccountNumber(account);
+    	  System.out.println("enter your four digit passcode plz");
+    	  int passcode=sc.nextInt();
+    	  customer.setPassCode(passcode);
+    	  System.out.println("what do you like to do thoday?\n enter 1- to withdrow\n2- to add balance\n"
+    	  		+ "3- for balance inquiry\n 4- To print your reciept");
+    	  int input=sc.nextInt();
+    	  switch(input)
+    	  { 
+    	  case 1:
+    	  {   
+    		  System.out.println("how much money are you adding to your balalce?");
+    		  double money=sc.nextDouble();
+    		  customer.addBalance(money);
+    		  break;
+    	  }
+    	  case 2:
+    	  {   
+    		  System.out.println("how much money you want to withdrow from your balalce?");
+    		  double money=sc.nextDouble();
+    		  try {
+				customer.withdrow(money);
+			} catch (overDraftException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+    		  break;
+    	  }
+    	  case 3:
+    	  {   
+    		  System.out.println("your current balalce is :");
+    		
+    		  System.out.println(customer.showBalnce());
+    		  break;
+    	  }
+    	  case 4:
+    	  { 
+    		  customer.printRecipt();
+    	  } 
+    	  System.out.println("are you done for today? y/N");
+    	   input1=sc.nextLine();
+    	  }
+      }while(input1.equalsIgnoreCase("y"));
+	}
+
+}

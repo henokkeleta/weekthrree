@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+
+public class BookDatabase extends Book{
+	
+	
+    private ArrayList<Book>books;
+	public BookDatabase(String skuNumber,ArrayList<Book>books) {
+		super();
+		//this.skuNumber = skuNumber;
+		this.books=new ArrayList<Book>();
+	}
+	public BookDatabase() {
+		super();
+		//this.skuNumber = skuNumber;
+		//this.books=new ArrayList<Book>();
+	}
+	public BookDatabase(String skuNumber) {
+		super();
+		//this.skuNumber = skuNumber;
+		//this.books=new ArrayList<Book>();
+	}
+//	public String getSkuNumber() {
+//		return skuNumber;
+//	}
+//
+//	public void setSkuNumber(String skuNumber) {
+//		this.skuNumber = skuNumber;
+//	}
+	public Book getBook(String skuNumber)
+	{ 
+		Book temp=new Book(skuNumber);
+		
+		
+		
+		for(Book book: books)
+		{  
+			if(book.getSkuNumber().equalsIgnoreCase(skuNumber))
+			{ 
+				temp=book;
+			}
+			
+		}
+		return temp;
+		
+	}
+   
+}

@@ -1,0 +1,64 @@
+import java.util.ArrayList;
+
+public class BookDatabase {
+//	 private String title;
+//	 private String author;
+//	 private double price;
+//	 private String description;
+//	 private String isInStock;
+//	 private String skuNumber;
+	 
+	private ArrayList<Book>books=new ArrayList<Book>(); 
+	 
+		 public BookDatabase() {
+			 super();
+		 }
+
+       Book book1 =setBook("java","henok","it is educarional",22,"00aa");
+	   Book book2 =setBook("Python","Bisrat","it is for educational purpose",35.99,"00BB");
+	   Book book3 =setBook("Rasp","Jems","text BOok",46.99,"00cc");
+	   Book book4 =setBook("Anybook","Jems","any BOok",46.99,"00dd");
+	 //  Book book5 =new  Book();
+
+	
+	   
+	 
+	 public Book setBook(String title, String Author,String Description, double price, String sku)
+	 { 
+		 Book temp =new Book();
+		 temp.setTitle(title);
+		 temp.setAuthor(Author);
+		 temp.setDescription(Description);
+		 temp.setPrice(price);
+		 temp.setSkuNumber(sku);
+		
+		return temp; 
+	 }
+    
+	public ArrayList<Book> getBooks() {
+		return books;
+	}
+
+	public void setBooks(Book books) {
+		this.books = books;
+	}
+
+	public Book getBook(String skuNumber)
+	{ 
+		Book temp=new Book(skuNumber);
+		
+		
+		
+		for(Book book: books)
+		{  
+			if(book.getSkuNumber().equalsIgnoreCase(skuNumber))
+			{ 
+				temp=book;
+			}
+			
+		}
+		return temp;
+		
+	}
+   
+}
